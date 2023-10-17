@@ -23,7 +23,7 @@
 #         ishora = False
 #     else:
 #         print(float(qiymat)**2)
-
+print("Salom")
 print("Kiritilgan sonning kvadrati qaytaruvchi dastur")
 savol = "Istalgan son kiritng"
 savol +="(dasturni to'xtatish uchun 'exit' deb yozing):"
