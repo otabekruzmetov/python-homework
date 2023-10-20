@@ -1,136 +1,136 @@
-# car0 = {
-#     'model': 'lacetti',
-#     'rang': 'oq',
-#     'yil': 2018,
-#     'narh': 13000,
-#     'km': 50000,
-#     'korobka': 'avtomat'
-# }
-#
-# car1 = {
-#     'model': 'nexia 3',
-#     'rang': 'qora',
-#     'yil': 2015,
-#     'narh': 9000,
-#     'km': 890000,
-#     'korobka': 'mexanika'
-# }
-#
-# car2 = {
-#     'model': 'gentra',
-#     'rang': 'qizil',
-#     'yil': 2015,
-#     'narh': 9000,
-#     'km': 890000,
-#     'korobka': 'mexanika'
-# }
+car0 = {
+    'model': 'lacetti',
+    'rang': 'oq',
+    'yil': 2018,
+    'narh': 13000,
+    'km': 50000,
+    'korobka': 'avtomat'
+}
 
-# car = car0
-# print(f"{car['model'].title()},\
-#     {car['rang']} rang,\
-#     {car['yil']}-yil, {car['narh']}$")
-#
-# car = car1
-# print(f"{car['model'].title()},\
-#     {car['rang']} rang,\
-#     {car['yil']}-yil, {car['narh']}$")
-#
-# # car = car2
-# print(f"{car['model'].title()},\
-#     {car['rang']} rang,\
-#     {car['yil']}-yil, {car['narh']}$")
+car1 = {
+    'model': 'nexia 3',
+    'rang': 'qora',
+    'yil': 2015,
+    'narh': 9000,
+    'km': 890000,
+    'korobka': 'mexanika'
+}
 
-# cars = [car0,car1,car2]
-# for car in cars:
-#     print(f"{car['model'].title()},\
-# {car['rang']} rang,\
-# {car['yil']}-yil, {car['narh']}$")
-# print(cars[0])
-# print(cars[0]['model'])
-# print(f"{cars[2]['rang'].title()}"
-#       f"{cars[2]['model']}")
+car2 = {
+    'model': 'gentra',
+    'rang': 'qizil',
+    'yil': 2015,
+    'narh': 9000,
+    'km': 890000,
+    'korobka': 'mexanika'
+}
 
-# malibus = []
-# for n in range(10):
-#     new_car = {
-#         'model':'malibu',
-#         'rang':None,
-#         'yil':2020,
-#         'narh':None,
-#         'km':0,
-#         'korobka':'avto'
-#     }
-#     malibus.append(new_car)
-# # print(malibus)
-# for malibu in malibus[:3]:
-#     malibu['rang']='qizil'
-# for malibu in malibus[3:6]:
-#     malibu['rang']='qora'
-#     # print(malibus)
-# for malibu in malibus:
-#     if malibu['korobka']=='avto':
-#         malibu['narh']=40000
-#     else:
-#         malibu['narh']=35000
+car = car0
+print(f"{car['model'].title()},\
+    {car['rang']} rang,\
+    {car['yil']}-yil, {car['narh']}$")
+
+car = car1
+print(f"{car['model'].title()},\
+    {car['rang']} rang,\
+    {car['yil']}-yil, {car['narh']}$")
+
+# car = car2
+print(f"{car['model'].title()},\
+    {car['rang']} rang,\
+    {car['yil']}-yil, {car['narh']}$")
+
+cars = [car0,car1,car2]
+for car in cars:
+    print(f"{car['model'].title()},\
+{car['rang']} rang,\
+{car['yil']}-yil, {car['narh']}$")
+print(cars[0])
+print(cars[0]['model'])
+print(f"{cars[2]['rang'].title()}"
+      f"{cars[2]['model']}")
+
+malibus = []
+for n in range(10):
+    new_car = {
+        'model':'malibu',
+        'rang':None,
+        'yil':2020,
+        'narh':None,
+        'km':0,
+        'korobka':'avto'
+    }
+    malibus.append(new_car)
 # print(malibus)
-#
-# hamkasblar = {
-#     'ali':{'fanmiliya':'valiyev',
-#            'tyil':1995,
-#            'malumot':'oliy',
-#            'tillar':['python','c++']
-#             },
-#
-#     'vali':{'fanmiliya':'aliyev',
-#            'tyil':2001,
-#            'malumot':'orta maxsus',
-#            'tillar':['html','css','js']
-#             },
-#     'hasan':{'fanmiliya':'husanov',
-#            'tyil':1999,
-#            'malumot':'maxsus',
-#            'tillar':['python','php']
-# },
-# }
-# for ism, info in hamkasblar.items():
-#     print(f"\n{ism.title()} {info['familiya'].title()}, "
-#           f"{info['tyil']}-yilda tug'ilgan. "
-#           f"Ma'lumoti: {info['malumot']}. \n"
-#           "Quyidagi dasturlash tillarini biladi:")
-#     for til in info['tillar']:
-#         print(til.upper())
-# print(hamkasblar)
+for malibu in malibus[:3]:
+    malibu['rang']='qizil'
+for malibu in malibus[3:6]:
+    malibu['rang']='qora'
+    # print(malibus)
+for malibu in malibus:
+    if malibu['korobka']=='avto':
+        malibu['narh']=40000
+    else:
+        malibu['narh']=35000
+print(malibus)
 
-# ajdodlar = {
-#     'ism':'Abu Abdullox Muhammad ibn Ismoil',
-#     'tavalud topgan yeri':'Buxoro',
-#     'tuglgan sanasi':810,
-#     'necha yil umr korgan':60,
-# }
-# print(ajdodlar)
-#
-# ajdodlar = {
-#     'ism':'Abdula Qodiriy',
-#     'tavalud topgan yeri':'Toshkent',
-#     'tuglgan sanasi':1849,
-#     'necha yil umr korgan':44,
-# }
-# print(ajdodlar)
-#
-# ajdodlar = {
-#     'ism':'Erkin Vohidov',
-#     'tavalud topgan yeri':'fargona',
-#     'tuglgan sanasi':1936,
-#     'necha yil umr korgan':80,
-# }
-# print(ajdodlar)
-#
-# ajdodlar = {
-#     'ism':'Alisher Navoiy',
-#     'tavalud topgan yeri':'Xirotdea',
-#     'tuglgan sanasi':1441,
-#     'necha yil umr korgan':60,
-# }
+hamkasblar = {
+    'ali':{'fanmiliya':'valiyev',
+           'tyil':1995,
+           'malumot':'oliy',
+           'tillar':['python','c++']
+            },
+
+    'vali':{'fanmiliya':'aliyev',
+           'tyil':2001,
+           'malumot':'orta maxsus',
+           'tillar':['html','css','js']
+            },
+    'hasan':{'fanmiliya':'husanov',
+           'tyil':1999,
+           'malumot':'maxsus',
+           'tillar':['python','php']
+},
+}
+for ism, info in hamkasblar.items():
+    print(f"\n{ism.title()} {info['familiya'].title()}, "
+          f"{info['tyil']}-yilda tug'ilgan. "
+          f"Ma'lumoti: {info['malumot']}. \n"
+          "Quyidagi dasturlash tillarini biladi:")
+    for til in info['tillar']:
+        print(til.upper())
+print(hamkasblar)
+
+ajdodlar = {
+    'ism':'Abu Abdullox Muhammad ibn Ismoil',
+    'tavalud topgan yeri':'Buxoro',
+    'tuglgan sanasi':810,
+    'necha yil umr korgan':60,
+}
+print(ajdodlar)
+
+ajdodlar = {
+    'ism':'Abdula Qodiriy',
+    'tavalud topgan yeri':'Toshkent',
+    'tuglgan sanasi':1849,
+    'necha yil umr korgan':44,
+}
+print(ajdodlar)
+
+ajdodlar = {
+    'ism':'Erkin Vohidov',
+    'tavalud topgan yeri':'fargona',
+    'tuglgan sanasi':1936,
+    'necha yil umr korgan':80,
+}
+print(ajdodlar)
+
+ajdodlar = {
+    'ism':'Alisher Navoiy',
+    'tavalud topgan yeri':'Xirotdea',
+    'tuglgan sanasi':1441,
+    'necha yil umr korgan':60,
+}
 
 ajdodlar = [
      {
