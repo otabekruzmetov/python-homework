@@ -146,4 +146,23 @@
 
 # mehmonlar = ['Jonibek', 'Temurbek', 'Javlonbek', 'O\’tkirbek', 'Anvar', 'Bekzod']
 # print("sorted() qaytargan ro'yxat:", sorted(mehmonlar))
-# print("Asl ro'yxat o'zgarmas qoldi:", mehmonla
+# print("Asl ro'yxat o'zgarmas qoldi:", mehmonlar)
+#
+# bmw = {
+#     'model':'m8',
+#     'rang':'qora',
+#     'balon razmeri':22,
+# }
+# print(input('qaysi mashinani tanlaysiz'))
+# rolls_roys = {
+#     'model':'none',
+#     'rang':'qora',
+#     'balon razmeri':22,
+# }
+#
+# mustang = {
+#     'model':'factblack',
+#     'rang':'qora',
+#     'balon razmeri':22,
+# }
+
