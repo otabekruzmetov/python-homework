@@ -27,4 +27,16 @@ def katta_harf(matnlar):
 ismlar = ['ali', 'vali', 'hasan', 'husan']
 katta_harf(ismlar)
 print(ismlar)
-print('salom ali')
+print('salom ali'.title())
+
+def katta_harf(matnlar):
+    for i in range(len(matnlar)):
+        if matnlar[i] == 'ali':
+            matnlar[i] = matnlar[0].title()
+        else:
+            matnlar[i] = matnlar[i].upper()
+
+
+ismlar = ['ali', 'vali', 'hasan', 'husan']
+katta_harf(ismlar)
+print(ismlar)
