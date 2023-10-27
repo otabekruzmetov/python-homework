@@ -42,7 +42,7 @@ katta_harf(ismlar)
 print(ismlar)
 
 'UY ISHI'
-'20-DARS Moslashuvchan funksiya'
+'19-DARS Moslashuvchan funksiya'
 ('uyga vazifa sharti:"1.Istalgancha sonlarni qabul qilib, ularning'
   "ko'paytmasini qaytaruvchi funksiya yozing")
 
