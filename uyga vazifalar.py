@@ -47,12 +47,13 @@ print(ismlar)
   "ko'paytmasini qaytaruvchi funksiya yozing")
 
 def sonlarni_qaytaravchi_funk(*sonlar):
+    """istalgan sonni qabul qilib ularning ko'paytmasini qaytaruvchi funksiya"""
     yigindi = 1
     for son in sonlar:
         yigindi *= son
     return yigindi
 
+print(sonlarni_qaytaravchi_funk.__doc__)
+print(sonlarni_qaytaravchi_funk(4, 5,6,2 ))
+print(sonlarni_qaytaravchi_funk(2,6))
 
-print(sonlarni_qaytaravchi_funk(4, 5 ))
-
-('uyga vazifani 2-sharti:2.20-darsdagi modullar mavuzidagi misolni yozish')

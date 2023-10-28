@@ -148,21 +148,22 @@
 # print("sorted() qaytargan ro'yxat:", sorted(mehmonlar))
 # print("Asl ro'yxat o'zgarmas qoldi:", mehmonlar)
 #
-# bmw = {
-#     'model':'m8',
-#     'rang':'qora',
-#     'balon razmeri':22,
-# }
-# print(input('qaysi mashinani tanlaysiz'))
-# rolls_roys = {
-#     'model':'none',
-#     'rang':'qora',
-#     'balon razmeri':22,
-# }
-#
-# mustang = {
-#     'model':'factblack',
-#     'rang':'qora',
-#     'balon razmeri':22,
-# }
+bmw =[ {
+    'model':'m8',
+    'rang':'qora',
+    'balon razmeri':22,
+}]
+
+print(input('qaysi mashinani tanlaysiz va malumot bilmoqchimisiz'))
+rolls_roys_malumotlar = {
+    'model':'none',
+    'rang':'qora',
+    'balon razmeri':22,
+}
+
+mustang_malumotlar = {
+    'model':'factblack',
+    'rang':'qora',
+    'balon razmeri':22,
+}
 
