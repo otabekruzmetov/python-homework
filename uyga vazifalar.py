@@ -57,3 +57,18 @@ print(sonlarni_qaytaravchi_funk.__doc__)
 print(sonlarni_qaytaravchi_funk(4, 5,6,2 ))
 print(sonlarni_qaytaravchi_funk(2,6))
 
+'UY ISHI'
+'21-DARS ,MATHN MODUL'
+"omad show o'yiniga xush kelibsiz"
+"Siz administratirsiz sizni vazifangiz omad show"
+"aksiyasi doirasida mahsulot xarid qilgan odamlarni nomerini qo'lda ro'yhatga"
+"kiritib borishingiz zarur" (931234567) "tariqasida" ("kamida 10ta odam raqami).Va raqamlarni kiritib"
+"bolgandan keyin oxirda" "(start)"                                                                                                                                                                                                                                ' so')zini yozganingizda dastur ishga tushib tasodifiy raqamni aniqlasin. Uni konsolga
+("(Siz (palon raqam" "egasi keyingi ko'rsatuvga sizni taklif qilamiz) deb chiqarsin."
+
+# 1
+ raqamlar =[931234567,886001218,9975115756,]
+import random as r
+
+son = r.randint(0,100)
+print(son)
