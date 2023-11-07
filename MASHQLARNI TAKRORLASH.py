@@ -140,12 +140,33 @@
 # sonlar[3]=sonlar[3]+1500
 # print(sonlar)
 
+# import random
+#
+# random_telefon_raqam = []
+# ishora = True
+# while ishora:
+#     tel = random_telefon_raqam.append(input(f" Telefon raqamingzni kiriting>> +{998} "))
+#     savol = input("Yana tel kiritasizmi (ha/yo'q)")
+#     if savol.lower() == 'ha':
+#         continue
+#     else:
+#         ishora = False
+#     if (input("STRART tugmasini bosing>>")).lower() == 'start':
+#         telefon_raqam = random.choice(random_telefon_raqam)
+#         print(f"{telefon_raqam} - siz yutdingz, sizni omad showda kutamiz")
+#     else:
+#         print("YANA START TUGMASINI BOSIB KURING KURING")
+
 # cars = ['bmw','mers','general motoros','tesla','volvo','audi']
 # cars.sort()
 # print(cars)
-
+#
 # mehmonlar = ['Jonibek', 'Temurbek', 'Javlonbek', 'O\’tkirbek', 'Anvar', 'Bekzod']
 # print("sorted() qaytargan ro'yxat:", sorted(mehmonlar))
 # print("Asl ro'yxat o'zgarmas qoldi:", mehmonlar)
 
-
+# mehmonlar = ['olloh',"payg'ambar",'sahobalar',"hazrati Ali"]
+# mehmonlar.append('abu abkir')
+# mehmonlar.__len__()
+# print(mehmonlar.remove() = True)
+# print(mehmonlar)

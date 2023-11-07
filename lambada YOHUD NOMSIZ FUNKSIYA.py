@@ -1,37 +1,27 @@
-# import math
-# uzunlik = lambda pi,r:2*pi*r
-# print(uzunlik(math.pi,10))
+class Talaba:
+    """Talaba nomli klass yaratamiz"""
+    def __init__(self,ism,familiya,tyil):
+        """Talabaning xususiyatlari"""
+        self.ism = ism
+        self.familiya = familiya
+        self.tyil = tyil
+        self.bosqich = 1
 
-# def daraja(n):
-    # return lambda x : x**n
+    def get_info(self):
+        return f"{self.ism} {self.familiya}.{self.bosqich}-bosqich talabasi"
 
-# kvadarat = daraja(2)
-# kub = daraja(3)
-# print(f"3-ning kvadrati {kvadarat(3)} ga, kubi esa {kub(3)} ga teng")
-#
-# from math import sqrt
-#
-# sonlar = list(range(11))
-# ildizlar = list(map(sqrt,sonlar))
-#
-# print(ildizlar)
+    def set_bosqich(self,bosqich):
+        """Talabaning kursini yangilovchi metod"""
+        self.bosqich = bosqich
 
-sonlar = list(range(11))
+    def update_bosqich(self):
+        """Talabaning bosqichini 1 taga ko'paytiramiz"""
+        self.bosqich += 1
 
-# def daraja2(x):
-    # """Berilgan sonning kvadrati qaytaruvchi funksiya"""
-    # return x*x
-# print(daraja2.__doc__)
-# print(list(map(daraja2,sonlar)))
-# kvadratlar = list(map(lambda x:x,sonlar))
-# print(kvadratlar)
+talaba1 = Talaba("otabek","Ro'zmetov",2008)
 
-kvadratlar = []
-for son in  sonlar:
-    kvadratlar.append(son*son)
-print(kvadratlar)
+talaba1.update_bosqich()
+print(talaba1.get_info())
 
-a = [4,5,6]
-b = [7,8,9]
-a_plus_b = list(map(lambda x,y:x+y,a,b))
-print(a_plus_b)
+talaba1.update_bosqich()
+print(talaba1.get_info())
