@@ -63,9 +63,9 @@
 # Agar ro'yxatda bunday login mavjud bo'lsa,
 # "Login band, yangi login tanlang!" aks holda "Xush kelibsiz, foydalanuvchi!" xabarini chiqaring.
 # 2.
-foydalanuvchi = ["otabek", "behruz", "kamron", "saloh", "jamshid"]
-login = input("Yangi login tanglang!")
-if foydalanuvchi in login:
-print(f"Login band yangi login tanlang!")
-else:
-print(f"Xush kelibsiz!")
+# foydalanuvchi = ["otabek", "behruz", "kamron", "saloh", "jamshid"]
+# login = input("Yangi login tanglang!")
+# if foydalanuvchi in login:
+#  print(f"Login band yangi login tanlang!")
+# else:
+#  print(f"Xush kelibsiz!")
