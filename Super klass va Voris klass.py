@@ -15,8 +15,8 @@
 # #     def get_age(self,yil):
 # #         """Shaxsning yoshini qaytaruvchi metod"""
 # #         return yil - self.tyil
-# #
-# # # inson = Shaxs("Otabek","Ro'zmetov","FB1122",2008)
+#
+# inson = Shaxs("Otabek","Ro'zmetov","FB1122",2008)
 # # # print(f"{inson.get_info()}. {inson.get_age(2023)} yoshda")
 # #
 # # class Talaba(Shaxs):

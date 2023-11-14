@@ -170,3 +170,27 @@
 # mehmonlar.__len__()
 # print(mehmonlar.remove() = True)
 # print(mehmonlar)
+
+class talaba:
+    """O'quvchi classi"""
+    def __init__(self,ism,familiya,toy,tyil,):
+        """oquvchining malumotlari"""
+        self.ism = ism
+        self.familiya = familiya
+        self.toy = toy
+        self.tyil = tyil
+
+    def get_fullname(self):
+        """O'quvchining to'liq ism familiyasi"""
+        fullname = f"Ismim {self.ism} familiyam {self.familiya} "
+        fullname +=f"Tug'ilgan oyim {self.toy} tug'ilgan yilim  {self.tyil}"
+        return fullname
+
+    def get_age(self,yil):
+        """O'quvchining yilinin aniqlovchi metod"""
+        return yil - self.tyil
+
+inson = talaba("otabek","ro'zmetov","dekabr",2008)
+print(f"{inson.get_fullname()}. {inson.get_age(2023)} yoshda.")
+
+
