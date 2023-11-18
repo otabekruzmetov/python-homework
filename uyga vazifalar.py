@@ -143,69 +143,105 @@
 from uuid import uuid4
 
 
-class Shaxs:
-    """Shaxslar haqida ma'lumot"""
+# class Shaxs:
+#     """Shaxslar haqida ma'lumot"""
+#
+#     def __init__(self, ism, familiya, passport, tyil):
+#         self.ism = ism
+#         self.familiya = familiya
+#         self.passport = passport
+#         self.tyil = tyil
+#
+#     def get_info(self):
+#         """Shaxs haqida ma'lumot"""
+#         info = f"{self.ism} {self.familiya}. "
+#         info += f" Passport: {self.passport}, {self.tyil}-yilda tug`ilgan"
+#         return info
+#
+#     def get_age(self, yil):
+#         """Shaxsning yoshini qaytaruvchi metod"""
+#         return yil - self.tyil
+#
+#
+# class Talaba(Shaxs):
+#     """Talaba klassi"""
+#
+#     __talaba_soni = 0
+#
+#     def __init__(self, ism, familiya, passport, tyil):
+#         """Talabaning xususiyatlari"""
+#         super().__init__(ism, familiya, passport, tyil)
+#         self.__id = uuid4()
+#         self.bosqich = 1
+#         Talaba.__talaba_soni += 1
+#
+#     @classmethod
+#     def get_talabalarsoni(cls):
+#         return f"Talabalar soni:{cls.__talaba_soni}"
+#
+#     def get_id(self):
+#         """Talabaning ID raqami"""
+#         return self.__id
+#
+#     def get_bosqich(self):
+#         """Talabaning o'qish bosqichi"""
+#         return self.bosqich
+#
+#     def get_info(self):
+#         """Talaba haqida ma'lumot"""
+#         info = f"{self.ism} {self.familiya}. "
+#         info += f"{self.get_bosqich()}-bosqich. ID raqami: {self.__id}"
+#         return info
+#
+#
+# Talaba1 = Talaba(f"Otabek", "Ro'zmetov", "adAd", 2009, )
+# Talaba2 = Talaba(f"Azizbek", "Alimov", "aaa242", 2001, )
+# Talaba3 = Talaba(f"Fazliddin", "Dabuluov", "adsdaa242", 2005)
+# Talaba4 = Talaba(f"Lziz", "Raxmonov", "aaa242", 2008, )
+# print(Talaba1.get_talabalarsoni())
+# print(Talaba1.get_info())
+# print(Talaba2.get_info())
+# print(Talaba3.get_info())
+# print(Talaba4.get_info())
 
-    def __init__(self, ism, familiya, passport, tyil):
-        self.ism = ism
-        self.familiya = familiya
-        self.passport = passport
-        self.tyil = tyil
+"""Uy ishi"""
+"""Ushbu o'zgaruvchini JSON ko'rinishida saqlang va JSON matnini konsolga chiqaring:
+ data = {"Model" : "Malibu", "Rang" : "Qora", "Yil":2020, "Narh":40000}
 
-    def get_info(self):
-        """Shaxs haqida ma'lumot"""
-        info = f"{self.ism} {self.familiya}. "
-        info += f" Passport: {self.passport}, {self.tyil}-yilda tug`ilgan"
-        return info
+Ushbu JSON matnni ko'chirib oling, va talabaning ismi va 
+familiyasini  konsolga chiqaring: talaba_json = {"ism":"Hasan","familiya":"Husanov","tyil":2000} 
 
-    def get_age(self, yil):
-        """Shaxsning yoshini qaytaruvchi metod"""
-        return yil - self.tyil
+Yuqoridagi ikki o'zgaruvchini alohida JSON fayllarga saqlang."""
+import json
+# data = {
+#     "model":"malibu",
+#     "rang":"qora",
+#     "yil":2020,
+#     "narh":40000
+# }
+# data_json = json.dumps(data,indent = 5)
+# print(data_json)
+# with open('data.json','w') as f:
+#     json.dump(data,f)
 
+talaba_json = {
+    "ism":"Hasan",
+    "familiya":"Husanov",
+    "tyil":2000}
 
-class Talaba(Shaxs):
-    """Talaba klassi"""
+with open('talaba.json','w') as f:
+    json.dump(talaba_json,f)
 
-    __talaba_soni = 0
-
-    def __init__(self, ism, familiya, passport, tyil):
-        """Talabaning xususiyatlari"""
-        super().__init__(ism, familiya, passport, tyil)
-        self.__id = uuid4()
-        self.bosqich = 1
-        Talaba.__talaba_soni += 1
-
-    @classmethod
-    def get_talabalarsoni(cls):
-        return f"Talabalar soni:{cls.__talaba_soni}"
-
-    def get_id(self):
-        """Talabaning ID raqami"""
-        return self.__id
-
-    def get_bosqich(self):
-        """Talabaning o'qish bosqichi"""
-        return self.bosqich
-
-    def get_info(self):
-        """Talaba haqida ma'lumot"""
-        info = f"{self.ism} {self.familiya}. "
-        info += f"{self.get_bosqich()}-bosqich. ID raqami: {self.__id}"
-        return info
+# talaba = json.loads(talaba_json)
+# print(talaba)
 
 
-Talaba1 = Talaba(f"Otabek", "Ro'zmetov", "adAd", 2009, )
-Talaba2 = Talaba(f"Azizbek", "Alimov", "aaa242", 2001, )
-Talaba3 = Talaba(f"Fazliddin", "Dabuluov", "adsdaa242", 2005)
-Talaba4 = Talaba(f"Lziz", "Raxmonov", "aaa242", 2008, )
-print(Talaba1.get_talabalarsoni())
-print(Talaba1.get_info())
-print(Talaba2.get_info())
-print(Talaba3.get_info())
-print(Talaba4.get_info())
-
-
-
-
-
+ism = "Hasan"
+familiya = "Husanov"
+ism_json = json.dumps(ism)
+familiya_json = json.dumps(familiya)
+print(ism_json)
+print(familiya_json)
+with open('talaba.json','w') as f:
+    json.dump(talaba_json,f)
 

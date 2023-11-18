@@ -171,26 +171,20 @@
 # print(mehmonlar.remove() = True)
 # print(mehmonlar)
 
-class talaba:
-    """O'quvchi classi"""
-    def __init__(self,ism,familiya,toy,tyil,):
-        """oquvchining malumotlari"""
-        self.ism = ism
-        self.familiya = familiya
-        self.toy = toy
-        self.tyil = tyil
+# mehmonlar = ['otabek','sanjar','javohir','akmal']
+# for mehmon in mehmonlar:
+    # print(mehmon)
+#
+# mehmonlar = ['otabek','sanjar','javohir','akmal']
+# for mehmon in mehmonlar:
+#     print(f"Hurmatli {mehmon} sizni uyga taklif qilamiz")
 
-    def get_fullname(self):
-        """O'quvchining to'liq ism familiyasi"""
-        fullname = f"Ismim {self.ism} familiyam {self.familiya} "
-        fullname +=f"Tug'ilgan oyim {self.toy} tug'ilgan yilim  {self.tyil}"
-        return fullname
+# mehmonlar = ['otabek','sanjar','javohir','akmal']
+# for mehmon in mehmonlar:
+    # print(mehmon)
 
-    def get_age(self,yil):
-        """O'quvchining yilinin aniqlovchi metod"""
-        return yil - self.tyil
-
-inson = talaba("otabek","ro'zmetov","dekabr",2008)
-print(f"{inson.get_fullname()}. {inson.get_age(2023)} yoshda.")
-
-
+# print(mehmonlar)
+#
+# sonlar = list(range(1,11))
+# for son in sonlar:
+#     print(f"{son} ning kvdrt {son**2} ga teng")
