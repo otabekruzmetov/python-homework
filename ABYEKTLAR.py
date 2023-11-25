@@ -46,7 +46,7 @@ class Talaba:
         return self.talabalar_soni
 
 
-# talaba1 = Talaba("otabek","Ro'zmetov",2008)
+talaba1 = Talaba("otabek","Ro'zmetov",2008)
 class Fan():
     def __init__(self,nomi):
         self.nomi = nomi

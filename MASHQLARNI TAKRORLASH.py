@@ -188,3 +188,31 @@
 # sonlar = list(range(1,11))
 # for son in sonlar:
 #     print(f"{son} ning kvdrt {son**2} ga teng")
+#
+# son = 1
+# while son <= 5:
+#     print(son,end='')
+#     son = son + 1
+#
+# print("Kiritilgan sonning kvadratini qaytaruvchi dastur")
+# savol = "Istalgan son kiriting"
+# savol += "(dasturni to'xtatish uchun exit deb yozing):"
+# qiymat = ""
+# while qiymat !='exit':
+#     qiymat = input(savol)
+#     if qiymat != "exit":
+#         print(float(qiymat)**2)
+# print("istalgan ismni tanglang")
+# variatlar1 = ['otabek','jasutr','sanjar']
+# print(variatlar1)
+# variatlar = "(Dasturnio to'xatamoqchi bo'lsangiz stop deb yozing):"
+# ism = ''
+# while ism != 'stop':
+#     ism = input(variatlar)
+#     if ism !="stop":
+#         print(str(ism))
+#
+# ismlar = ['ali','umar''zubayir','abubakr','usmon','said abu vaqos','abdurahmon']
+# ismlar.append('ALLOH')
+# ismlar.sort()
+# print(ismlar)

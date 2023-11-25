@@ -203,15 +203,15 @@ from uuid import uuid4
 # print(Talaba2.get_info())
 # print(Talaba3.get_info())
 # print(Talaba4.get_info())
-
-"""Uy ishi"""
-"""Ushbu o'zgaruvchini JSON ko'rinishida saqlang va JSON matnini konsolga chiqaring:
- data = {"Model" : "Malibu", "Rang" : "Qora", "Yil":2020, "Narh":40000}
-
-Ushbu JSON matnni ko'chirib oling, va talabaning ismi va 
-familiyasini  konsolga chiqaring: talaba_json = {"ism":"Hasan","familiya":"Husanov","tyil":2000} 
-
-Yuqoridagi ikki o'zgaruvchini alohida JSON fayllarga saqlang."""
+#
+# """Uy ishi"""
+# """Ushbu o'zgaruvchini JSON ko'rinishida saqlang va JSON matnini konsolga chiqaring:
+#  data = {"Model" : "Malibu", "Rang" : "Qora", "Yil":2020, "Narh":40000}
+#
+# Ushbu JSON matnni ko'chirib oling, va talabaning ismi va
+# familiyasini  konsolga chiqaring: talaba_json = {"ism":"Hasan","familiya":"Husanov","tyil":2000}
+#
+# Yuqoridagi ikki o'zgaruvchini alohida JSON fayllarga saqlang."""
 import json
 # data = {
 #     "model":"malibu",
@@ -223,25 +223,64 @@ import json
 # print(data_json)
 # with open('data.json','w') as f:
 #     json.dump(data,f)
-
-talaba_json = {
-    "ism":"Hasan",
-    "familiya":"Husanov",
-    "tyil":2000}
-
-with open('talaba.json','w') as f:
-    json.dump(talaba_json,f)
+#
+# talaba_json = {
+#     "ism":"Hasan",
+#     "familiya":"Husanov",
+#     "tyil":2000}
+#
+# with open('talaba.json','w') as f:
+#     json.dump(talaba_json,f)
 
 # talaba = json.loads(talaba_json)
 # print(talaba)
 
 
-ism = "Hasan"
-familiya = "Husanov"
-ism_json = json.dumps(ism)
-familiya_json = json.dumps(familiya)
-print(ism_json)
-print(familiya_json)
-with open('talaba.json','w') as f:
-    json.dump(talaba_json,f)
+# ism = "Hasan"
+# familiya = "Husanov"
+# ism_json = json.dumps(ism)
+# familiya_json = json.dumps(familiya)
+# print(ism_json)
+# print(familiya_json)
+# with open('talaba.json','w') as f:
+#     json.dump(talaba_json,f)
 
+
+#
+#
+#
+# """
+# Quyidagi funksiyalarni yarating, va ularning har biri uchun test dasturlarini yozing:
+#
+# Uchta son qabul qilib, ulardan eng kattasini qaytaruvchi funksiya
+#
+# Matnlardan iborat ro'yxat qabul qilib, ro'yxatdagi har bir matnning birinchi harfini katta harfga o'zgatiruvchi
+#  funksiya"""
+#
+# def kattason(x, y, z):
+#     return max(x, y, z)
+#
+#
+# def text_list(*args):
+#     title_list = []
+#     for text in args:
+#         title_list.append(text.title())
+#     return title_list
+#
+#
+# import unittest
+#
+#
+# class Sontest(unittest.TestCase):
+#     def sonmax(self):
+#         son = kattason(3, 4, 5)
+#         self.assertEqual(son, 1)
+#
+#
+# class Matntest(unittest.TestCase):
+#     def tittle(self):
+#         matn = text_list("jonibek")
+#         self.assertEqual(matn, "otabek")
+#
+#
+# unittest.main()
