@@ -12,15 +12,15 @@ class Talaba():
     def ism_familiyani_tyli(self):
         return f"Talabaning familiya ismi : {self.familiya} {self.ism} {self.tyil} tug'ulgan."
 
-    # def malumot(self):
-    #     return f"Talaba {self.fakultet}da {self.yonalish}da o'qiydi."
-    #
-    # def kurusi_b_malumot(self):
-    #     return f"Talaba {self.bosqich}-kurs {self.guruh} id raqami :{self.id}."
+    def malumot(self):
+        return f"Talaba {self.fakultet}da {self.yonalish}da o'qiydi."
+
+    def kurusi_b_malumot(self):
+        return f"Talaba {self.bosqich}-kurs {self.guruh} id raqami :{self.id}."
 
 
-# talaba1 = Talaba("Ro'zmetov", "Otabek", 2008, "uztelecom", "dasturlash", 2, 941_21, 9412203)
-# print(talaba1.malumot().title())
+talaba1 = Talaba("Ro'zmetov", "Otabek", 2008, "uztelecom", "dasturlash", 2, 941_21, 9412203)
+print(talaba1.malumot().title())
 
 
 class Shaxs(Talaba):
@@ -30,7 +30,7 @@ class Shaxs(Talaba):
         """Talabaning xususiyatlari"""
         super().__init__(ism, familiya, tyil)
         self.idraqam = idraqam
-        # self.bosqich = 1
+
 
     def get_id(self):
         """Talabaning ID raqami"""
@@ -40,10 +40,7 @@ class Shaxs(Talaba):
         fullname = f"Ismim {self.ism} familiya {self.familiya} "
         fullname += f"tyil {self.tyil}  id raqam {self.idraqam}"
         return fullname
-    #
-    # def get_bosqich(self):
-    #     """Talabaning o'qish bosqichi"""
-    #     return self.bosqich
+
 inson = Shaxs("otabek","Ro'zmetov","KN55253",2008,121821)
 print(inson.get_fullname())
 
